@@ -30,4 +30,4 @@ class NewsGallery:
         #click on login button
         self.driver.find_element(By.ID,"login_button").click()
 
-obj1=NewsGallery("faheem","faheem")
+obj1=NewsGallery("xxxxx","xxxxxx")
