@@ -10,9 +10,9 @@ class NewsGallery:
     def __init__(self,username,password):
         #these lines will help if someone faces issues like 
         # chrome closes after execution 
-        # self.opts=webdriver.ChromeOptions()
-        # self.opts.add_experimental_option("detach",True)
-        self.driver=webdriver.Chrome("C:/Users/faroo/Desktop/work/drivers/chromedriver.exe")
+        self.opts=webdriver.ChromeOptions("C:/Users/faroo/Desktop/work/drivers/chromedriver.exe")
+        self.opts.add_experimental_option("detach",True)
+        self.driver=webdriver.Chrome(options=self.opts)
         self.driver.maximize_window()
 
         #username passwrod
@@ -30,4 +30,4 @@ class NewsGallery:
         #click on login button
         self.driver.find_element(By.ID,"login_button").click()
 
-obj1=NewsGallery("xxxxx","xxxxxxxxxx")
+obj1=NewsGallery("faheem","faheem")
