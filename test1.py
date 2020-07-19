@@ -13,8 +13,8 @@ driver.get("https://www.newsgallery.com/")
 assert "NewsGallery | People's Own Media" in driver.title 
 
 driver.find_element_by_id("guest-login-button").click()
-driver.find_element_by_id("id_username").send_keys("xxxx")
-driver.find_element_by_id("id_password").send_keys("xxxx")
+driver.find_element_by_id("id_username").send_keys("faheem")
+driver.find_element_by_id("id_password").send_keys("faheem321")
 driver.find_element_by_id("login_button").click()
 time.sleep(10)
 elm=driver.find_element(By.XPATH,"//*[@id='myBoard']/div/div/div[1]/div/div[1]/a")
